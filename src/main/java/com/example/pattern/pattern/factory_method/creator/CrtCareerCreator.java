@@ -11,9 +11,7 @@ public class CrtCareerCreator extends AbstractCrtCreator {
      */
     @Override
     Product createProduct() {
-
-        ConcreteProductCrtCareer crtCareer = new ConcreteProductCrtCareer();
         //ConcreteProductCrtCareer crtCareer = DB.I/O()
-        return crtCareer;
+        return new ConcreteProductCrtCareer();
     }
 }
