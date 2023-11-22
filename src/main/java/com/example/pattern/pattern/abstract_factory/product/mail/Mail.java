@@ -1,5 +1,6 @@
 package com.example.pattern.pattern.abstract_factory.product.mail;
 
+import com.example.pattern.pattern.abstract_factory.product.Communicatable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -9,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * @author volka
  */
 @Data
-public class Mail {
+public class Mail extends Communicatable {
     private String mailTemplateCode;
     private String senderMail;
     private String receiverMail;
