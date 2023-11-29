@@ -1,4 +1,4 @@
-package com.example.pattern.pattern.prototype;
+package com.example.pattern.pattern.prototype.prototype;
 
 public abstract class Prototype {
 

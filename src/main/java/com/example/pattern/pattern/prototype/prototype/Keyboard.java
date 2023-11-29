@@ -1,7 +1,12 @@
-package com.example.pattern.pattern.prototype;
+package com.example.pattern.pattern.prototype.prototype;
+
 
 public class Keyboard extends Prototype {
     private String keyboardType;
+
+    public Keyboard() {
+        super();
+    }
 
     public Keyboard(Keyboard keyboard) {
         super(keyboard);
@@ -9,7 +14,7 @@ public class Keyboard extends Prototype {
     }
 
     @Override
-    public Prototype clone() {
+    public Keyboard clone() {
         return new Keyboard(this);
     }
 }

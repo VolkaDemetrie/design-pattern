@@ -1,7 +1,16 @@
-package com.example.pattern.pattern.prototype;
+package com.example.pattern.pattern.prototype.prototype;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class MechanicalKeyboard extends Keyboard {
     private String tenKeyless;
+
+    public MechanicalKeyboard() {
+        super();
+    }
 
     public MechanicalKeyboard(MechanicalKeyboard mechanicalKeyboard) {
         super(mechanicalKeyboard);
@@ -9,7 +18,7 @@ public class MechanicalKeyboard extends Keyboard {
     }
 
     @Override
-    public Prototype clone() {
+    public MechanicalKeyboard clone() {
         return new MechanicalKeyboard(this);
     }
 }
